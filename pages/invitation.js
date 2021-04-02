@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Invitation() {
   return (
     <Layout>
-      <div className="mx-4 lg:mx-0">
+      <div className="mx-4 lg:mx-0 animate__animated animate__fadeIn">
         <div className="flex flex-col">
           <div className="flex">
             <div className="m-auto block items-center justify-center text-center mt-8 lg:mt-32 max-w-2xl">

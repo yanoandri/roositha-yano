@@ -1,11 +1,44 @@
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import Countdown, {zeroPad} from "react-countdown";
+
+// Random component
+const Completionist = () => <h1 className="handwriting text-6xl sm:text-sm-4">Happy Wedding!</h1>;
+
+const renderer = ({days, hours, minutes, seconds, completed}) => {
+  if (completed) {
+    return (<Completionist />)
+  } else {
+    return (
+      <div className="flex text-6xl sm:text-4xl">
+        <div className="flex items-center">
+          <div className="flex flex-col m-5 space-y-5 items-center">
+            <h5 className="text-center">Days</h5>
+            <span>{days}</span>
+          </div>
+          <div className="flex flex-col m-5 space-y-5 items-center">
+            <h5 className="text-center">Hours</h5>
+            <span>{zeroPad(hours)}</span>
+          </div>
+          <div className="flex flex-col m-5 space-y-5 items-center">
+            <h5 className="text-center">Minutes</h5>
+            <span>{zeroPad(minutes)}</span>
+          </div>
+          <div className="flex flex-col m-5 space-y-5 items-center">
+            <h5 className="text-center">Seconds</h5>
+            <span>{zeroPad(seconds)}</span>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default function Home() {
   return (
     <Layout>
-      <div id="landing">
+      <div id="landing" className="animate__animated animate__fadeIn">
         <Image
           className="w-full h-auto object-cover"
           layout="fill"
@@ -18,11 +51,19 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex mb-8">
-            <h2 className="handwriting text-6xl xs:text-6xl">
-              Roositha Ayuwigati
+            <h2 className="handwriting text-6xl justify-center xs:text-4xl xs:justify-center">
+              <span className="flex">Roositha Ayuwigati</span>
               <span className="flex justify-center">&</span>
-              Yano Andriyanto
+              <span className="flex">Yano Andriyanto</span>
             </h2>
+          </div>
+          <div className="flex m-3">
+            <Countdown 
+              className="text-6xl" 
+              date={new Date("2021-08-14T10:00:00")}
+              // date={Date.now() + 1000} for testing purposes
+              renderer={renderer}
+            />
           </div>
           <div className="flex">
             <h3 className="text-sm lg:text-xl mb-4">
