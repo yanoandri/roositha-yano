@@ -1,39 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Countdown, {zeroPad} from "react-countdown";
-
-// Random component
-const Completionist = () => <h1 className="handwriting text-6xl sm:text-sm-4">Happy Wedding!</h1>;
-
-const renderer = ({days, hours, minutes, seconds, completed}) => {
-  if (completed) {
-    return (<Completionist />)
-  } else {
-    return (
-      <div className="flex text-6xl sm:text-4xl">
-        <div className="flex items-center">
-          <div className="flex flex-col m-5 space-y-5 items-center">
-            <h5 className="text-center">Days</h5>
-            <span>{days}</span>
-          </div>
-          <div className="flex flex-col m-5 space-y-5 items-center">
-            <h5 className="text-center">Hours</h5>
-            <span>{zeroPad(hours)}</span>
-          </div>
-          <div className="flex flex-col m-5 space-y-5 items-center">
-            <h5 className="text-center">Minutes</h5>
-            <span>{zeroPad(minutes)}</span>
-          </div>
-          <div className="flex flex-col m-5 space-y-5 items-center">
-            <h5 className="text-center">Seconds</h5>
-            <span>{zeroPad(seconds)}</span>
-          </div>
-        </div>
-      </div>
-    )
-  }
-}
+import Countdown from "react-countdown";
+import renderer from "../components/Countdown"
 
 export default function Home() {
   return (
@@ -43,6 +12,8 @@ export default function Home() {
           className="w-full h-auto object-cover"
           layout="fill"
           src="/image/background.jpg"
+          objectFit="cover"
+          quality={100}
         />
         <div className="bg-white opacity-50 absolute inset-0 flex flex-col items-center justify-center">
           <div className="flex">

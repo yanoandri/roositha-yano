@@ -76,10 +76,11 @@ export default function Invitation() {
           </div>
           <p className="text-center my-8 md:my-4 md:max-w-xl lg:max-w-3xl">
             Mengingat situasi pandemi COVID-19, tamu yang dapat hadir ke lokasi
-            pernikahan kami sangat terbatas karena adanya pembatasan sosial.
+            pernikahan kami sangat terbatas hanya karena adanya pembatasan sosial,
+            serta kami juga sangat memerhatikan protokol kesehatan yang berlaku.
             Oleh karena itu, kami mohon maaf yang sebesar-besarnya jika kami
-            belum dapat mengundang Bapak/Ibu/Saudara/i secara fisik pada acara
-            kami.
+            belum dapat mengundang Bapak/Ibu/Saudara/i semua secara fisik pada 
+            acara kami.
           </p>
           <p className="text-center my-8 md:my-4 md:max-w-xl lg:max-w-3xl">
             Namun, Bapak/Ibu/Saudara/i dapat ikut serta merayakan kebahagiaan

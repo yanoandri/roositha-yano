@@ -5,8 +5,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>#RoosithaYano</title>
-        <meta name="title" content="#RoosithaYano" />
+        <title>Roositha & Yano</title>
+        <meta name="title" content="Roositha & Yano" />
       </Head>
       <Component {...pageProps} />
     </>
