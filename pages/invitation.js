@@ -1,8 +1,25 @@
-import Layout from "../components/Layout";
-import Image from "next/image";
+import * as React from "react";
+import Layout from "../components/Layout"
+import Image from "next/image"
 import { mapUrl } from "../helper"
 
-export default function Invitation() {
+export default function Invitation() {  
+
+  // const [mapDisplay, setMapDisplay] = React.useState({
+  //   height: 0,
+  //   width: 0
+  // })
+
+  // React.useEffect(() => {
+  //   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  //   setMapDisplay({
+  //     height: isMobile ? 300 : 450,
+  //     width: isMobile ? 300 : 650
+  //   })
+  // }, [])
+
+  
 
   return (
     <Layout>
@@ -27,7 +44,7 @@ export default function Invitation() {
               <div>
                 <Image
                   src="/image/roositha.jpg"
-                  className="rounded-full"
+                  className="rounded-full animate__animated animate__fadeIn"
                   width={128}
                   height={128}
                 />
@@ -45,7 +62,7 @@ export default function Invitation() {
               <div>
                 <Image
                   src="/image/yano.jpg"
-                  className="rounded-full"
+                  className="rounded-full animate__animated animate__fadeIn"
                   width={128}
                   height={128}
                 />
@@ -125,15 +142,18 @@ export default function Invitation() {
         <div className="flex flex-col text-center justify-center items-center">
           <div className="flex flex-col">
             <h1 className="handwriting text-6xl">Lokasi</h1>
+            <h5>Java Terrace Kitchen & Bar Solo</h5>
+            <p>Jl. Slamet Riyadi No.464, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147</p>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col sm:h-450 sm:w-200">
             <iframe 
             src={mapUrl}
-            width="600" 
-            height="450" 
+            width="350"
+            height="350"
             style={{border: 0}} 
             allowFullScreen="" 
-            loading="lazy" />
+            loading="lazy" 
+            className="mt-5"/>
           </div>
         </div>
         <div className="flex max-w-5xl mx-auto my-8">
