@@ -1,7 +1,9 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import { mapUrl } from "../helper"
 
 export default function Invitation() {
+
   return (
     <Layout>
       <div className="mx-4 lg:mx-0 animate__animated animate__fadeIn">
@@ -116,6 +118,23 @@ export default function Invitation() {
             Doa restu Bapak/Ibu/Saudara/i merupakan suatu kehormatan dan
             kebahagiaan bagi kami.
           </p>
+        </div>
+        <div className="flex max-w-5xl mx-auto my-8">
+          <hr className="shadow w-full justify-center items-center" />
+        </div>
+        <div className="flex flex-col text-center justify-center items-center">
+          <div className="flex flex-col">
+            <h1 className="handwriting text-6xl">Lokasi</h1>
+          </div>
+          <div className="flex flex-col">
+            <iframe 
+            src={mapUrl}
+            width="600" 
+            height="450" 
+            style={{border: 0}} 
+            allowFullScreen="" 
+            loading="lazy" />
+          </div>
         </div>
         <div className="flex max-w-5xl mx-auto my-8">
           <hr className="shadow w-full justify-center items-center" />

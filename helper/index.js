@@ -1,0 +1,1 @@
+export const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${process.env.MAP_API_KEY}&q=Java+Terrace,Solo+Jawa+Tengah`
