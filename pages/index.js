@@ -12,8 +12,6 @@ export default function Home() {
           className="w-full h-auto object-cover"
           layout="fill"
           src="/image/background.jpg"
-          objectFit="cover"
-          quality={100}
         />
         <div className="bg-white opacity-50 absolute inset-0 flex flex-col items-center justify-center">
           <div className="flex">
@@ -22,7 +20,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex mb-8">
-            <h2 className="handwriting text-6xl justify-center xs:text-4xl xs:justify-center">
+            <h2 className="handwriting text-6xl text-center justify-center">
               <span className="flex">Roositha Ayuwigati</span>
               <span className="flex justify-center">&</span>
               <span className="flex">Yano Andriyanto</span>
