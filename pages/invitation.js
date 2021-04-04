@@ -3,23 +3,7 @@ import Layout from "../components/Layout"
 import Image from "next/image"
 import { mapUrl } from "../helper"
 
-export default function Invitation() {  
-
-  // const [mapDisplay, setMapDisplay] = React.useState({
-  //   height: 0,
-  //   width: 0
-  // })
-
-  // React.useEffect(() => {
-  //   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  //   setMapDisplay({
-  //     height: isMobile ? 300 : 450,
-  //     width: isMobile ? 300 : 650
-  //   })
-  // }, [])
-
-  
+export default function Invitation() {
 
   return (
     <Layout>
@@ -162,9 +146,9 @@ export default function Invitation() {
         <div className="flex flex-col text-center max-w-5xl mx-auto my-8">
           <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
           <p className="mt-4">Kami yang berbahagia,</p>
-          <p>Kel. Bapak Gatot & Ibu Roosdrianti</p>
+          <p>Kel. Bapak Gatot Gito Haryanto & Ibu Roosdrianti</p>
           <p>dan</p>
-          <p>Kel. Bapak Jodi Prijanto & Ibu Yano Andriyanto</p>
+          <p>Kel. Bapak Jodi Prijanto & Ibu Navy Andria</p>
           <p className="handwriting my-8 text-center text-4xl lg:text-6xl ">
             Roositha & Yano
           </p>
