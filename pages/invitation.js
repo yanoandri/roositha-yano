@@ -28,7 +28,7 @@ export default function Invitation() {
               <div>
                 <Image
                   src="/image/roositha.jpg"
-                  className="rounded-full animate__animated animate__fadeIn"
+                  className="rounded-full"
                   width={128}
                   height={128}
                 />
@@ -46,7 +46,7 @@ export default function Invitation() {
               <div>
                 <Image
                   src="/image/yano.jpg"
-                  className="rounded-full animate__animated animate__fadeIn"
+                  className="rounded-full"
                   width={128}
                   height={128}
                 />

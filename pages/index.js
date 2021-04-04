@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <div id="landing" className="animate__animated animate__fadeIn">
         <Image
-          className="w-full h-auto object-cover animate__animated animate__fadeIn"
+          className="w-full h-auto object-cover"
           layout="fill"
           src="/image/background.jpg"
         />
